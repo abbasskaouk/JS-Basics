@@ -3,10 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>Step 3</title>
+  <script src="Step_3.js"></script>
 </head>
 <body>
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    <div id="changedinput"></div>
   </form>
+  <script>
+    document.getElementById("name").addEventListener("input", myInput);
+
+    function myInput() {
+      var x = document.getElementById("name").value;
+      document.getElementById("changedinput").innerHTML = "<p>You Wrote : " + x + "</p>";
+    }
+  </script>
 </body>
 </html>
