@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Step 6</title>
-    <!--<script src="Step_6.js"></script>-->
-  </head>
-  <body>
-      <img src="images/image1.jpg" id="image1" />
-      <img src="images/image2.jpg" id="image2" />
-      <img src="images/image3.jpg" id="image3" />
-      <img src="images/image4.jpg" id="image4" />
-      <img src="images/image5.jpg" id="image5" />
-      <script>
         var image1 = document.querySelector("#image1");
         var image2 = document.querySelector("#image2");
         var image3 = document.querySelector("#image3");
@@ -46,6 +32,3 @@
           document.getElementById("image4").src= "images/image4.jpg";
           document.getElementById("image5").src= "images/image5.jpg";
         }
-  </script>
-  </body>
-</html>
