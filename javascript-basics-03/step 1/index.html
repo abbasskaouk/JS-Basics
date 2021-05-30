@@ -3,8 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Step 1</title>
+    <!--<script src="Step_1.js"></script>-->
   </head>
   <body>
       <img src="images/image1.jpg" id="image1"/>
   </body>
+  <script>
+    var image = document.querySelector("#image1");
+    image.addEventListener("mouseover", resize);
+    image.addEventListener("mouseout", back);
+
+    function resize() {
+      image.style.border = "solid red 3px";
+    }
+    function back() {
+      image.style.border = "0px";
+    }
+  </script>
 </html>
